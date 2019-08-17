@@ -1,0 +1,39 @@
+/*
+ * Audiovisualization using the html canvas element.
+ * ©2017, Dominik Hofacker
+ * https://www.behance.net/dominikhofacker
+ * Please consider supporting this project on behance:
+ * https://www.behance.net/gallery/49260123/Web-Audio-Visualization
+ */
+@keyframes hue {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(-360deg);
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+#freq {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+.run-animation {
+  animation-name: hue;
+  animation-duration: 500s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name: hue;
+  -webkit-animation-duration: 500s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+}

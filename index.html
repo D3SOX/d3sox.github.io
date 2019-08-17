@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="refresh" content="0; URL='http:/d3sox.icu'" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3SOX Site</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/visualizer.css" />
+  </head>
+
+  <body class="unselectable">
+    <canvas id="freq" class="run-animation"></canvas>
+    <div class="content">
+      <div class="outlinetext">
+        <h2 id="welcometext"></h2>
+      </div>
+
+      <div class="rgbtext">
+        <h1 id="hitext"></h1>
+        <h1 id="agetext"></h1>
+        <h1 id="description"></h1>
+        <h1 id="description2"></h1>
+      </div>
+    </div>
+
+    <div class="hint">click to unmute</div>
+
+    <div class="video-background">
+      <video muted autoplay loop>
+        <source src="res/res.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/video.js"></script>
+  </body>
 </html>
