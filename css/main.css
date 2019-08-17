@@ -56,8 +56,8 @@ html, body {
   text-decoration: none;
   margin-left: auto;
 
-  text-shadow: 1px 1px 0px rgba(0, 0, 255, 100),
-    -1px -1px 0px rgba(255, 0, 0, 100);
+    text-shadow: 1px 1px 0 rgba(0, 0, 255, 100),
+    -1px -1px 0 rgba(255, 0, 0, 100);
 }
 
 .video-background {
@@ -77,7 +77,7 @@ html, body {
   color: #ffffff;
 	position: fixed;
 	bottom: 3.25vmin;
-	font-family: "VT323";
+    font-family: "VT323", serif;
 	font-size: 3.25vmin;
 	letter-spacing: 0.2vmin;
 }

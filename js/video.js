@@ -28,7 +28,7 @@ document.body.addEventListener("click", _ => {
   }
 });
 
-var doScroll = function(e) {
+let doScroll = function (e) {
   e = window.event || e;
   let delta = 0.012;
   let oldVolume = video.volume;
@@ -94,10 +94,9 @@ draw();
  * https://www.behance.net/gallery/49260123/Web-Audio-Visualization
  */
 function drawBars(array) {
-  var threshold = 0;
+  let threshold = 0;
   ctx.clearRect(0, 0, c.width, c.height);
-  var maxBinCount = clicked ? array.length : 0;
-  var space = 3;
+  let maxBinCount = clicked ? array.length : 0;
 
   ctx.save();
 
@@ -106,13 +105,13 @@ function drawBars(array) {
   ctx.translate(window.innerWidth, window.innerHeight);
   ctx.fillStyle = "#fff";
 
-  var bass = Math.floor(clicked ? array[1] : 0); //1Hz Frequenz
-  var radius =
+  let bass = Math.floor(clicked ? array[1] : 0); //1Hz Frequenz
+  let radius =
     0.45 * $(window).width() <= width
       ? -(bass * 0.25 + 0.45 * $(window).width())
       : -(bass * 0.25 + width);
 
-  var bar_length_factor = 1;
+  let bar_length_factor = 1;
   if ($(window).width() >= 785) {
     bar_length_factor = 1.0;
   } else if ($(window).width() < 785) {
@@ -121,8 +120,8 @@ function drawBars(array) {
     bar_length_factor = 20.0;
   }
   //go over each bin
-  for (var i = 0; i < maxBinCount; i++) {
-    var value = array[i];
+  for (let i = 0; i < maxBinCount; i++) {
+    let value = array[i];
     if (value >= threshold) {
       //draw bin
       //ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);
@@ -137,8 +136,8 @@ function drawBars(array) {
     }
   }
 
-  for (var i = 0; i < maxBinCount; i++) {
-    var value = array[i];
+  for (let i = 0; i < maxBinCount; i++) {
+    let value = array[i];
     if (value >= threshold) {
       //draw bin
       //ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);
@@ -153,8 +152,8 @@ function drawBars(array) {
     }
   }
 
-  for (var i = 0; i < maxBinCount; i++) {
-    var value = array[i];
+  for (let i = 0; i < maxBinCount; i++) {
+    let value = array[i];
     if (value >= threshold) {
       //draw bin
       //ctx.fillRect(0 + i * space, c.height - value, 2 , c.height);

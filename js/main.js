@@ -10,6 +10,11 @@ function writeText(text, id) {
 
   let charArray = text.split("");
 
+  timer = setTimeout(
+      "writeText('" + text.substring(1, text.length) + "','" + id + "')",
+      100
+  );
+
   if (charArray.length > 0) {
     document.getElementById(id).innerHTML += charArray.shift();
   } else {
@@ -17,10 +22,6 @@ function writeText(text, id) {
     return false;
   }
 
-  timer = setTimeout(
-    "writeText('" + text.substring(1, text.length) + "','" + id + "')",
-    100
-  );
 }
 
 let rev = "fwd";
@@ -28,24 +29,24 @@ let changeTitle = false;
 let msg = "D3SOX Site";
 let timer;
 
-function titlebar(val) {
+function titleBar(val) {
   if (changeTitle) {
     changeTitle = false;
     return;
   }
-  let res = " ";
   let speed = 100;
   let pos = val;
   let le = msg.length;
-  if (rev == "fwd") {
+  let scroll;
+  if (rev === "fwd") {
     if (pos < le) {
       pos = pos + 1;
       scroll = msg.substr(0, pos);
       document.title = scroll;
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
+      timer = window.setTimeout("titleBar(" + pos + ")", speed);
     } else {
       rev = "bwd";
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
+      timer = window.setTimeout("titleBar(" + pos + ")", speed);
     }
   } else {
     if (pos > 0) {
@@ -53,15 +54,15 @@ function titlebar(val) {
       let ale = le - pos;
       scroll = msg.substr(ale, le);
       document.title = scroll;
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
+      timer = window.setTimeout("titleBar(" + pos + ")", speed);
     } else {
       rev = "fwd";
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
+      timer = window.setTimeout("titleBar(" + pos + ")", speed);
     }
   }
 }
 
-titlebar(0);
+titleBar(0);
 
 function calculateAge() {
   let birthDate = new Date("November 26, 1998");
