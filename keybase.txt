@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/d3sox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://d3sox.icu
+  * I am d3sox (https://keybase.io/d3sox) on keybase.
+  * I have a public key ASDcaJ0x_OF8WhDPfL3dovYF3gGpJIwv4gFwH0GYkGumZAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204f107938a0a80b05fe5000118a15cc1f6756ca0fe2e60589fdd2ec880805f0da0a",
+      "host": "keybase.io",
+      "kid": "0120dc689d31fce17c5a10cf7cbddda2f605de01a9248c2fe201701f4198906ba6640a",
+      "uid": "8a065215e384b1189ae66d57dae15e19",
+      "username": "d3sox"
+    },
+    "merkle_root": {
+      "ctime": 1574087232,
+      "hash": "12862c3ad45581a5b771e3c87e41b702aab84d6478f7f236e39387b2a566be8acb6fa4914a367aa51a197edd170d49f5d5ce5ab9253b316b89f95cc81f4d8185",
+      "hash_meta": "ec5d28be2691fb40038119cbc2e6db5dbad3a08b351bfcfc2b3468bd8d810d2b",
+      "seqno": 10069860
+    },
+    "service": {
+      "entropy": "KXnDHFkiS5lO0L3vxfgdo2ih",
+      "hostname": "d3sox.icu",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574087246,
+  "expire_in": 504576000,
+  "prev": "46a98e439d04c0860e2d3798fce67bf3605a27fc75ca4c7f8f9c489bbad190ff",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3GidMfzhfFoQz3y93aL2Bd4BqSSML+IBcB9BmJBrpmQKp3BheWxvYWTESpcCJsQgRqmOQ50EwIYOLTeY/OZ782BaJ/x1ykx/j5xIm7rRkP/EIJWN4I40CLGJ9aPXGct+Pgwz+lK6vEGAFvGioXoHCwT6AgHCo3NpZ8RA1VXcw3A2ph72xBa5THxPtO84/KuHRWRe0W1WG3umUkIO0HW2nhBLbVNxhe6agv4CPkSsO2GUZPZhxn4ffU5EB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIK9BOsCycfgYRsQvQEU7m/XspQfeKqiUAIe+PMVMlPSEo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/d3sox
+
+==================================================================
