@@ -19,6 +19,13 @@ body {
 .sound-toggle {
   cursor: pointer; }
 
+.copy {
+  background-color: #434c5e;
+  cursor: pointer; }
+
+.copy::hover {
+  background-color: #4c566a; }
+
 .visualizer {
   z-index: -999;
   position: fixed;

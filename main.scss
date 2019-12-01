@@ -25,6 +25,15 @@ body {
   cursor: pointer;
 }
 
+.copy {
+  background-color: $nord2;
+  cursor: pointer;
+}
+
+.copy::hover {
+  background-color: $nord3;
+}
+
 .visualizer {
   z-index: -999;
   position: fixed;

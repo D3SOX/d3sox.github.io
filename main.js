@@ -18,6 +18,10 @@ soundOff.addEventListener("click", _ => {
     }
 });
 
+$(document).ready(function () {
+    new ClipboardJS('.copy');
+});
+
 soundOn.addEventListener("click", _ => {
     audio.pause();
     soundOn.style.display = "none";
