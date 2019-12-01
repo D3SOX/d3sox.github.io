@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/d3sox
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://d3s0x.github.io
+  * I am d3sox (https://keybase.io/d3sox) on keybase.
+  * I have a public key ASDcaJ0x_OF8WhDPfL3dovYF3gGpJIwv4gFwH0GYkGumZAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204f107938a0a80b05fe5000118a15cc1f6756ca0fe2e60589fdd2ec880805f0da0a",
+      "host": "keybase.io",
+      "kid": "0120dc689d31fce17c5a10cf7cbddda2f605de01a9248c2fe201701f4198906ba6640a",
+      "uid": "8a065215e384b1189ae66d57dae15e19",
+      "username": "d3sox"
+    },
+    "merkle_root": {
+      "ctime": 1574093847,
+      "hash": "8483995bbabed68152a65a1ac49950f858c9118bdcd97b6075ecb1c4f82b520a775b8cbce3e465ddbc7a9c630cb07d5be057d0523c5e646bf63af92f44eb39c5",
+      "hash_meta": "b544749076c1f301f0afb7adf49a1a4c719bcce121591bfbf6868bacd612d7b8",
+      "seqno": 10084466
+    },
+    "service": {
+      "entropy": "edKMUfESsZO2fV2vyJqiKZgo",
+      "hostname": "d3s0x.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1574093852,
+  "expire_in": 504576000,
+  "prev": "d2f06bc5748e321d9d7917bce7935dca38097c8d398a6192c5d8cdad3d8ca1b4",
+  "seqno": 42,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3GidMfzhfFoQz3y93aL2Bd4BqSSML+IBcB9BmJBrpmQKp3BheWxvYWTESpcCKsQg0vBrxXSOMh2deRe855NdyjgJfI05imGSxdjNrT2MobTEIPxj2Qm1N0Hw2cfeCvXRoDwHjyxGqPejg9W8BFrOgjb8AgHCo3NpZ8RAe4Z3/kRydc8liE+iGd6CN00TyE33VsC0GH1DTrYz86x4gnZL0eprzUfFDh7ex6OCEC5tsLouf0Jdn9jre8ymD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIB8VYme0Tri0qKzLoqa38s0TbSwHHp3TcWXZFwe4G/zio3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/d3sox
+
+==================================================================
