@@ -1,43 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>D3SOX Site</title>
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/visualizer.css" />
-  </head>
+<html>
 
-  <body class="unselectable">
-    <canvas id="freq" class="run-animation"></canvas>
-    <div class="content">
-      <div class="outlinetext">
-        <h2 id="welcometext"></h2>
-      </div>
+    <head>
+        <meta charset='utf-8'>
+        <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+        <title>D3SOX</title>
+        <meta content='width=device-width, initial-scale=1' name='viewport'>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+        <link href='main.css' media='screen' rel='stylesheet' type='text/css'>
+    </head>
 
-      <div class="rgbtext">
-        <h1 id="hitext"></h1>
-        <h1 id="agetext"></h1>
-        <h1 id="description"></h1>
-        <h1 id="description2"></h1>
-      </div>
-    </div>
+    <body>
 
-    <div class="hint">click to unmute</div>
+        <audio id="audio" loop muted>
+            <source src="assets/beat.mp3" type="audio/mpeg">
+        </audio>
 
-    <div class="video-background">
-      <video muted autoplay loop>
-        <source src="res/res2.mp4" type="video/mp4" />
-      </video>
-    </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
-    <script src="js/video.js"></script>
-  </body>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <h1 class="title">D3SOX</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="card nord-card" style="width: 30rem; margin: 5px">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-chart-line"></i></i> <span class="white-text">Active projects</span></h2>
+                            <dl class="row">
+                                <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                        href="http://d3s0x.github.io/Soundboard" target="_blank">Soundboard</a></dt>
+                                <dd class="col-sm-6">A universal soundboard in Qt for linux using pulseaudio modules
+                                </dd>
+                                <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                        href="http://d3s0x.github.io/arch-installation" target="_blank">arch-installation</a>
+                                </dt>
+                                <dd class="col-sm-6">My installation instructions for arch linux</dd>
+                            </dl>
+                    </div>
+                </div>
+                <div class="card nord-card" style="width: 30rem; margin: 5px">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-level-down-alt"></i></i> <span class="white-text">Inactive projects</span></h2>
+                            <dl class="row">
+                                <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                        href="https://github.com/D3S0X/EasyMapReset" target="_blank">EasyMapReset</a>
+                                </dt>
+                                <dd class="col-sm-6">A map reset plugin for spigot based minecraft servers</dd>
+                                <dt class="col-sm-6"><i class="fas fa-link"></i> <a
+                                        href="https://github.com/D3S0X/SteamAllActions"
+                                        target="_blank">SteamAllActions</a></dt>
+                                <dd class="col-sm-6">Do some things for all elements for your steam account</dd>
+                            </dl>
+                    </div>
+                </div>
+                <div class="card nord-card" style="width: 61rem; margin: 5px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center"><i class="fas fa-person-booth"></i> <span class="white-text">About me</span>
+                        </h5>
+                        <p class="text-center white-text">
+                            I am D3SOX<br>
+                            I am 21 years old<br>
+                            I code with Java, Kotlin, PHP, JS, C++, Python<br>
+                            You can contact me on Discord: nico.#9196
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row visualizer justify-content-center">
+                <canvas height=200 id="canvas" width=500></canvas>
+            </div>
+        </div>
+
+        <div class="fixed-top">
+        <span class="sound-toggle" id="sound-on" style="display: none;">
+            <i class="fas fa-volume-up"></i> Sound on
+        </span>
+            <span class="sound-toggle" id="sound-off">
+            <i class="fas fa-volume-mute"></i> Sound off
+        </span>
+        </div>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src='main.js'></script>
+    </body>
+
 </html>

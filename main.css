@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+body {
+  font-family: Rubik;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #2e3440;
+  color: #88c0d0; }
+
+.title {
+  font-size: 50pt; }
+
+.white-text {
+  color: #eceff4; }
+
+.sound-toggle {
+  cursor: pointer; }
+
+.visualizer {
+  z-index: -999;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.nord-card {
+  background-color: #3b4252;
+  box-shadow: rgba(15, 17, 21, 0.25) 0px 4px 6px, rgba(15, 17, 21, 0.1) 0px 5px 7px;
+  transition: box-shadow 400ms ease-in-out 0s, background-color 400ms ease-in-out 0s;
+  transition-property: box-shadow, background-color;
+  transition-duration: 300ms, 300ms;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s; }
+
+.nord-card:hover {
+  box-shadow: rgba(15, 17, 21, 0.25) 0px 9px 9px, rgba(15, 17, 21, 0.1) 0px 9px 9px; }
+
+a:link {
+  color: #abb9cf; }
+
+a:visited {
+  color: #abb9cf; }
+
+a:hover {
+  color: #eceff4; }
+
+a:active {
+  color: #eceff4; }
+
+/*# sourceMappingURL=main.css.map */
