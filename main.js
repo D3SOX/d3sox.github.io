@@ -8,13 +8,13 @@ soundOff.addEventListener("click", () => {
     audio.muted = false;
     audio.volume = 0.05;
     soundOff.style.display = "none";
-    soundOn.style.display = "block";
+    soundOn.style.display = "unset";
 });
 
 soundOn.addEventListener("click", () => {
     audio.pause();
     soundOn.style.display = "none";
-    soundOff.style.display = "block";
+    soundOff.style.display = "unset";
 });
 
 $(document).ready(() => {
