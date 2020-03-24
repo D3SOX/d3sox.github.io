@@ -26,13 +26,6 @@ body {
 .copy::hover {
   background-color: #4c566a; }
 
-.visualizer {
-  z-index: -999;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0; }
-
 .nord-card {
   background-color: #3b4252;
   box-shadow: rgba(15, 17, 21, 0.25) 0px 4px 6px, rgba(15, 17, 21, 0.1) 0px 5px 7px;
