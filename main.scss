@@ -34,6 +34,17 @@ body {
   background-color: $nord3;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.75rem;
+  max-width: 60rem;
+}
+
+.span-col-2 {
+  grid-column: span 2 / auto;
+}
+
 .nord-card {
   background-color: $nord1;
   box-shadow: rgba(15, 17, 21, 0.25) 0px 4px 6px, rgba(15, 17, 21, 0.1) 0px 5px 7px;
