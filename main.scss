@@ -2,7 +2,7 @@
 @import "nord.scss";
 
 body {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -26,11 +26,11 @@ body {
 }
 
 .copy {
-  background-color: $nord2;
+  color: rgb(171, 185, 207);
   cursor: pointer;
 }
 
-.copy::hover {
+.copy:hover {
   background-color: $nord3;
 }
 

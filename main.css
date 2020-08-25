@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 body {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -20,10 +20,10 @@ body {
   cursor: pointer; }
 
 .copy {
-  background-color: #434c5e;
+  color: #abb9cf;
   cursor: pointer; }
 
-.copy::hover {
+.copy:hover {
   background-color: #4c566a; }
 
 .card-grid {
