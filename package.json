@@ -2,7 +2,7 @@
   "name": "d3sox.github.io",
   "version": "1.0.0",
   "description": "My website",
-  "main": "src/main.js",
+  "main": "src/main.html",
   "repository": "https://github.com/D3SOX/d3sox.github.io",
   "author": "D3SOX",
   "license": "GPL-3.0-only",

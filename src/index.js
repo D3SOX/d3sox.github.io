@@ -10,11 +10,11 @@ const switchBeat = document.getElementById('switch-beat');
 const volumeSlider = document.getElementById('volume-slider');
 const volumeIcon = document.getElementById('volume-icon');
 
+audio.src = beat;
 audio.muted = false;
 audio.volume = 0.05;
 
 soundOff.addEventListener('click', () => {
-    audio.src = beat;
     audio.play();
     soundOff.style.display = 'none';
     soundOn.style.display = 'unset';
@@ -33,6 +33,8 @@ switchBeat.addEventListener('click', () => {
         audio.src = beat;
     }
     audio.play();
+    soundOff.style.display = 'none';
+    soundOn.style.display = 'unset';
 });
 
 volumeSlider.addEventListener('input', function () {
