@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <meta
+            name="description"
+            content="D3SOX's personal website which shows projects and social media"
+        />
         <title>D3SOX</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -43,16 +47,18 @@
                 <br />
                 <span>
                     <i id="volume-icon" class="fas fa-volume-down w-4"></i>
-                    Volume
-                    <input
-                        class="align-middle"
-                        id="volume-slider"
-                        type="range"
-                        value="5"
-                        min="0"
-                        max="100"
-                        step="1"
-                    />
+                    <label>
+                        Volume
+                        <input
+                            class="align-middle"
+                            id="volume-slider"
+                            type="range"
+                            value="5"
+                            min="0"
+                            max="100"
+                            step="1"
+                        />
+                    </label>
                 </span>
             </div>
         </header>
@@ -65,12 +71,12 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-5xl">
                     <div class="nord-card">
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <div class="card-title">
                                 <i class="fas fa-chart-line"></i>
                                 <span class="white-text">
                                     Active projects
                                 </span>
-                            </h5>
+                            </div>
                             <div class="project-grid">
                                 <div>
                                     <i class="fas fa-link"></i>
@@ -149,12 +155,12 @@
                     </div>
                     <div class="nord-card">
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <div class="card-title">
                                 <i class="fas fa-level-down-alt"></i>
                                 <span class="white-text">
                                     Inactive projects
                                 </span>
-                            </h5>
+                            </div>
                             <div class="project-grid">
                                 <div>
                                     <i class="fas fa-link"></i>
@@ -191,10 +197,10 @@
                     </div>
                     <div class="nord-card md:col-span-2 text-center">
                         <div class="card-body">
-                            <h5 class="card-title">
+                            <div class="card-title">
                                 <i class="fas fa-person-booth"></i>
                                 <span class="white-text">About me</span>
-                            </h5>
+                            </div>
                             <ul class="text-center white-text list-unstyled">
                                 <li>I'm Nico, a developer from Germany</li>
                                 <li>
