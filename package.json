@@ -1,0 +1,23 @@
+{
+  "name": "d3sox.github.io",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "src/main.js",
+  "repository": "https://github.com/D3SOX/d3sox.github.io",
+  "author": "D3SOX",
+  "license": "GPL-3.0-only",
+  "private": false,
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.6",
+    "nord": "^0.2.1",
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.28.0"
+  }
+}
