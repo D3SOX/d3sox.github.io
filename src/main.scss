@@ -74,7 +74,7 @@ body {
 }
 
 .project-grid {
-    @apply inline-grid;
+    @apply grid;
     @apply grid-flow-col;
     @apply grid-cols-2;
     @apply mb-2;
