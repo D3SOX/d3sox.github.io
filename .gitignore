@@ -41,9 +41,6 @@ pids
 # Dependency directories
 node_modules/
 
-# TypeScript cache
-*.tsbuildinfo
-
 # Optional npm cache directory
 .npm
 
@@ -53,7 +50,5 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# parcel-bundler (https://parceljs.org/)
-.cache
-.parcel-cache
+# webpack
 dist

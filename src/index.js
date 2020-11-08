@@ -1,6 +1,7 @@
 import ClipboardJS from 'clipboard';
 import beat from './assets/beat.mp3';
 import beat2 from './assets/beat2.mp3';
+import './main.scss';
 
 const audio = document.getElementById('audio');
 
@@ -50,6 +51,6 @@ volumeSlider.addEventListener('input', function () {
     } else {
         volumeIcon.classList.add('fa-volume-mute');
     }
-})
+});
 
 new ClipboardJS('.copy');
