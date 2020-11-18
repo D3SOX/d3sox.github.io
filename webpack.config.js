@@ -19,7 +19,7 @@ module.exports = {
                     },
                 },
             },
-            { test: /\.mp3$/, use: 'file-loader' },
+            { test: /\.mp3$/, use: [{ loader: 'file-loader', options: { outputPath: 'sounds/' } }] },
             {
                 test: /\.s[ac]ss$/i,
                 exclude: /node_modules/,
