@@ -16,4 +16,4 @@ jobs:
                   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
                   BUILD_DIR: dist/
                   BUILD_SCRIPT: yarn install && yarn build
-                  PAGES_CNAME: d3sox.icu
+                  PAGES_CNAME: d3sox.me
