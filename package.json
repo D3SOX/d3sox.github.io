@@ -14,7 +14,7 @@
   "dependencies": {
     "clipboard": "^2.0.6",
     "nord": "^0.2.1",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
