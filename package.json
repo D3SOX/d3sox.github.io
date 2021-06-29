@@ -5,8 +5,7 @@
   "main": "src/main.html",
   "repository": "https://github.com/D3SOX/d3sox.github.io",
   "author": "D3SOX",
-  "license": "GPL-3.0-only",
-  "private": false,
+  "license": "MIT",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --node-env=production --mode production"
