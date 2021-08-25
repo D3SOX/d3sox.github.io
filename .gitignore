@@ -50,5 +50,8 @@ node_modules/
 # Yarn Integrity file
 .yarn-integrity
 
-# webpack
+# Vite
+.DS_Store
 dist
+dist-ssr
+*.local
