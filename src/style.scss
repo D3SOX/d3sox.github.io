@@ -26,7 +26,7 @@ svg.iconify {
 }
 
 .section {
-  @apply my-4 rounded shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col;
+  @apply my-4 rounded shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col max-w-7xl;
   background-color: $bg-secondary;
 
   .subtitle {
@@ -35,10 +35,6 @@ svg.iconify {
     &:not(.centered-section) {
       @apply mb-5;
     }
-  }
-
-  &.section-fill {
-    @apply col-span-full justify-self-center;
   }
 }
 
