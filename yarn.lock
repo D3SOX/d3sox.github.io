@@ -42,23 +42,23 @@
   resolved "https://registry.yarnpkg.com/@types/throttle-debounce/-/throttle-debounce-2.1.0.tgz#1c3df624bfc4b62f992d3012b84c56d41eab3776"
   integrity sha512-5eQEtSCoESnh2FsiLTxE121IiE60hnMqcb435fShf4bpLRjEu1Eoekht23y6zXS9Ts3l+Szu3TARnTsA0GkOkQ==
 
-"@windicss/config@1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.4.5.tgz#33ff2d4e1917a956c6a651fe4cf3e95c4f3917fb"
-  integrity sha512-+LLk3KmFTELPIVaBj9T4PE27aKtnLPLiHKeKLiK3H8yjre52F6IkP5czM5QBk9Ri8CHUIEjJClNDjOAMC1xBIg==
+"@windicss/config@1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.4.7.tgz#5562a36b907cc28a1b8ecc7d2ddc534a43e11ae8"
+  integrity sha512-giz6b9ce5fiac/JoLQSabcwD4wbkSt07Z0+Y0Ruw5RvJ4oejq7/4qv/cmFtjbf3l+rmxh8U8/1szQMd0Zs2esg==
   dependencies:
     debug "^4.3.2"
     jiti "^1.12.3"
-    tsup "^5.1.0"
+    tsup "^5.2.0"
     windicss "^3.1.7"
 
-"@windicss/plugin-utils@1.4.5":
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.4.5.tgz#9456a93e10d5e0b4396206f1eee0a0df7deadf66"
-  integrity sha512-pzpHJe8E/eYRHbLe3u568dAw/+3zomG/ptZ3cWk7GrYyRQooRoeEdRu4c0cyHQIVUIXJ7IO2tGHPFdd3yJS9Vg==
+"@windicss/plugin-utils@1.4.7":
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.4.7.tgz#d1b1ba445a85e6847a1385bf9348b4b5b3a00267"
+  integrity sha512-YRWQ4NHMS4/YPixoqku1+gRDRZgMHgRbx4Q0r+bLipczbbpNDPWgL4JS8F+xxbQn2wYRh7q+xqA8NIe/7T7vIA==
   dependencies:
     "@antfu/utils" "^0.3.0"
-    "@windicss/config" "1.4.5"
+    "@windicss/config" "1.4.7"
     debug "^4.3.2"
     fast-glob "^3.2.7"
     magic-string "^0.25.7"
@@ -701,10 +701,10 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.yarnpkg.com/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
-tsup@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.1.0.tgz#d9e916648fe6344466057c45c49bf7e0628a2ac2"
-  integrity sha512-shox7rIKPneySkC6CI7py1N1Buqlp++sofTztZxGAESP4od2WrPD/y0FwNo6+XaoXfuzVV6bDAwvCtDpc0bq1A==
+tsup@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/tsup/-/tsup-5.2.1.tgz#4ad4debd1d7852e8c4bb40075ebd2ee85efe7715"
+  integrity sha512-eQmRfKoHIiTFg38Dh2MARCx3J0+P+wbwB5iSHcXTwsnVR9csGLpln5qqBjdgyAGV1VTbOmyU37veCi2eA+wuqA==
   dependencies:
     cac "^6.7.2"
     chalk "^4.1.0"
@@ -725,12 +725,12 @@ typescript@~4.4.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
   integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
-vite-plugin-windicss@^1.4.5:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.4.5.tgz#e38838aa3fcc3c5af4752ec4446333212b505827"
-  integrity sha512-C9EOA/8Z3In15fa2MkZrk6IrzLC1IBzHhuuAPIo3uhPLqAYC8YohJnZA8IRImlSimAsPtIiJrGaKQunjpasLqg==
+vite-plugin-windicss@^1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/vite-plugin-windicss/-/vite-plugin-windicss-1.4.7.tgz#505ff1deb4209b95681c0d6eff59775e600e0f2b"
+  integrity sha512-m0z1CPrHKE4xrSb84f3iZICBFSznZvhvTHTv6PB3Bd0E56eDSbWNhBuV1m7Gg71wRpBeQv6oLt+tuOEZQ/+RVw==
   dependencies:
-    "@windicss/plugin-utils" "1.4.5"
+    "@windicss/plugin-utils" "1.4.7"
     chalk "^4.1.2"
     debug "^4.3.2"
     windicss "^3.1.7"
