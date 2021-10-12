@@ -13,7 +13,7 @@
     "sass": "^1.42.1",
     "typescript": "~4.4.3",
     "vite": "^2.6.7",
-    "vite-plugin-windicss": "^1.4.10",
+    "vite-plugin-windicss": "^1.4.11",
     "windicss": "^3.1.9"
   }
 }
