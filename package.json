@@ -8,7 +8,7 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "@iconify/iconify": "^2.1.1",
+    "@iconify/iconify": "^2.1.2",
     "jetbrains-mono": "^1.0.6",
     "sass": "^1.49.0",
     "typescript": "~4.5.5",
