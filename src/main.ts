@@ -6,8 +6,8 @@ import Iconify from '@iconify/iconify';
 Iconify.scan();
 
 const tooltips = document.querySelectorAll('.tooltip');
-for (let i = 0; i < tooltips.length; i++) {
-    const tooltip = tooltips.item(i)!;
+
+for (const tooltip of Array.from(tooltips)) {
     const text = tooltip.firstElementChild!.innerHTML;
     tooltip.addEventListener('click', async () => {
         await navigator.clipboard.writeText(text);
