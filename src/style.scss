@@ -43,6 +43,12 @@ svg.iconify {
   @apply text-6xl mb-2;
 }
 
+.code {
+  background-color: $bg-primary;
+  @apply text-white-500;
+  @apply rounded p-2 mt-2;
+}
+
 .project-card {
   @apply mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded;
   background-color: $bg-third;
