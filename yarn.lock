@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.15.10.tgz#78a42897c2cf8db9fd5f1811f7590393b77774c7"
   integrity sha512-w0Ou3Z83LOYEkwaui2M8VwIp+nLi/NA60lBLMvaJ+vXVMcsARYdEzLNE7RSm4+lSg4zq4d7fAVuzk7PNQ5JFgg==
 
-"@iconify/iconify@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@iconify/iconify/-/iconify-3.0.0.tgz#316d60d0e6100dacfc03bd1642c8d0d4d6423642"
-  integrity sha512-wgCSv4GwVLzwGqfUkYEDT9XOfetGZV67D5CmMYp74IdaPMnyOWb/3XxUPvGmuTt8Yw9xekMqzvdQp/p+a/abNw==
+"@iconify/iconify@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@iconify/iconify/-/iconify-3.0.1.tgz#7d8024d172217ca1a36765f89e64bee62c80d3b8"
+  integrity sha512-OPqVBTh8YsfrYZRVFv3OkmFNLqacM0dy/Oiw1h2wO+RZW5LieNGHlG2f9pzaeVRFWbEB8LHTeo8mcwgUTUbibQ==
   dependencies:
     "@iconify/types" "^2.0.0"
 
