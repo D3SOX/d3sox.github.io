@@ -77,6 +77,56 @@ a {
     @apply block cursor-text;
   }
 
+  // define show-hide-toast animation
+  @keyframes show-hide-toast {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 25%);
+    }
+    10% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    90% {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, 25%);
+    }
+  }
+
+  &::before {
+    content: 'Copied to clipboard';
+
+    position: absolute;
+    top: 150%;
+    left: 50%;
+
+    background: $bg-third;
+    color: $yellow;
+
+    padding: 0.4rem 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+
+    // hide by default
+    opacity: 0;
+    transform: translate(-50%, 25%);
+
+    // prepare animation
+    animation: show-hide-toast 2s ease-in-out forwards;
+    animation-play-state: paused;
+  }
+
+  // play on focus
+  &:focus {
+    &::before {
+      animation-play-state: running;
+    }
+  }
+
   & .tooltip-content {
     @apply absolute hidden text-center p-3 rounded-xl shadow-lg whitespace-pre-wrap;
     content: attr(data-tooltip);
