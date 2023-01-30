@@ -117,10 +117,10 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.16.6.tgz#26094ac38600cdac049cb320018bc34da9af22c2"
   integrity sha512-BlXuMzOWhAcdLRzE/PQLAAyhItzvL1fRMvbmHV6k09Xiq8rZzFJB/CrfX3ZQI0nKBlfxO4sLN9H9WwK2nLo7Pg==
 
-"@iconify/iconify@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@iconify/iconify/-/iconify-3.0.1.tgz#7d8024d172217ca1a36765f89e64bee62c80d3b8"
-  integrity sha512-OPqVBTh8YsfrYZRVFv3OkmFNLqacM0dy/Oiw1h2wO+RZW5LieNGHlG2f9pzaeVRFWbEB8LHTeo8mcwgUTUbibQ==
+"@iconify/iconify@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify/iconify/-/iconify-3.1.0.tgz#801a7e85db914ed183df42218f6771485f773065"
+  integrity sha512-Xyz+N5NSIiHj7G228CvFUcMKBz3BbpUTAuPnK2ariEUM7891F8ysD6Gh8782f3En1U4Qz70F0tzuyF8BhCfTQg==
   dependencies:
     "@iconify/types" "^2.0.0"
 
