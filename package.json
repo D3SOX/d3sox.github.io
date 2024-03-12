@@ -12,7 +12,7 @@
     "jetbrains-mono": "^1.0.6",
     "sass": "^1.71.1",
     "typescript": "~5.4.2",
-    "vite": "^5.1.5",
+    "vite": "^5.1.6",
     "vite-plugin-windicss": "^1.9.3",
     "windicss": "^3.5.6"
   }
