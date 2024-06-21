@@ -11,7 +11,7 @@
     "@iconify/iconify": "^3.1.1",
     "jetbrains-mono": "^1.0.6",
     "sass": "^1.77.6",
-    "typescript": "~5.4.5",
+    "typescript": "~5.5.2",
     "vite": "^5.3.1",
     "vite-plugin-windicss": "^1.9.3",
     "windicss": "^3.5.6"
