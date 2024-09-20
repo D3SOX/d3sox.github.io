@@ -10,7 +10,7 @@
   "devDependencies": {
     "@iconify/iconify": "^3.1.1",
     "jetbrains-mono": "^1.0.6",
-    "sass": "^1.79.1",
+    "sass": "^1.79.2",
     "typescript": "~5.5.4",
     "vite": "^5.4.5",
     "vite-plugin-windicss": "^1.9.3",
