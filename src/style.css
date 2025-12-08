@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+/* Custom theme extensions */
+@theme {
+  --color-bg-primary: #282c34;
+  --color-bg-secondary: #3E4451;
+  --color-bg-third: #3C4049;
+  --color-text: #ABB2BF;
+  --color-yellow: #E5C17C;
+  --color-red: #E06C75;
+  --color-blue: #51afef;
+  --color-magenta: #c678dd;
+
+  /* Custom widths */
+  --width-xs: 20rem;
+  --width-sm: 24rem;
+  --width-lg: 32rem;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+}
+
+svg.iconify {
+  display: inline;
+}
+
+.header {
+  @apply text-center mt-5 mb-8;
+}
+
+.main {
+  @apply flex flex-wrap justify-center;
+}
+
+.section {
+  @apply my-4 rounded shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col max-w-7xl;
+  background-color: var(--color-bg-secondary);
+}
+
+.section .subtitle {
+  color: var(--color-yellow);
+  @apply text-3xl text-center;
+}
+
+.section .subtitle:not(.centered-section) {
+  @apply mb-5;
+}
+
+.title {
+  color: var(--color-red);
+  @apply text-6xl mb-2;
+}
+
+.code {
+  background-color: var(--color-bg-primary);
+  @apply text-white/50 rounded p-2 mt-2;
+}
+
+.project-card {
+  @apply mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded;
+  background-color: var(--color-bg-third);
+}
+
+.project-card img {
+  @apply mb-3 mx-auto rounded w-sm;
+}
+
+.projects-footer {
+  @apply w-full text-center mt-4;
+}
+
+.project-more {
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded font-semibold transition-colors duration-200;
+  background-color: var(--color-bg-third);
+  border: 1px solid transparent;
+}
+
+.project-more:hover {
+  border-color: var(--color-magenta);
+  color: var(--color-magenta);
+}
+
+a {
+  color: var(--color-blue);
+}
+
+a svg {
+  vertical-align: middle;
+}
+
+a:hover {
+  color: var(--color-magenta);
+}
+
+.tooltip {
+  @apply relative cursor-pointer;
+}
+
+.tooltip:focus-within .tooltip-content {
+  @apply block cursor-text;
+}
+
+@keyframes show-hide-toast {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 25%);
+  }
+  10% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 25%);
+  }
+}
+
+.tooltip::before {
+  content: 'Copied to clipboard';
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  background: var(--color-bg-third);
+  color: var(--color-yellow);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0;
+  transform: translate(-50%, 25%);
+  animation: show-hide-toast 2s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+.tooltip:focus::before {
+  animation-play-state: running;
+}
+
+.tooltip .tooltip-content {
+  @apply absolute hidden text-center p-3 rounded-xl shadow-lg whitespace-pre-wrap;
+  content: attr(data-tooltip);
+  top: -90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  background: var(--color-bg-third);
+  color: var(--color-text);
+}
+
+.with-icon {
+  @apply whitespace-nowrap;
+}
+
+.footer {
+  @apply text-center mt-5 mb-8;
+}
+
+/* Flex utilities from windi config */
+.flex-fill {
+  flex: 1 0 100%;
+}

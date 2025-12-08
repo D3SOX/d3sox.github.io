@@ -1,7 +1,8 @@
-import WindiCSS from 'vite-plugin-windicss'
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 
-export default {
+export default defineConfig({
     plugins: [
-        WindiCSS(),
+        tailwindcss(),
     ],
-}
+})
