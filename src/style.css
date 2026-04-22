@@ -122,36 +122,6 @@ a:hover {
   }
 }
 
-.tooltip::before {
-  content: 'Copied to clipboard';
-  position: absolute;
-  top: 150%;
-  left: 50%;
-  background: var(--color-bg-third);
-  color: var(--color-yellow);
-  padding: 0.4rem 0.6rem;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
-  opacity: 0;
-  transform: translate(-50%, 25%);
-  animation: show-hide-toast 2s ease-in-out forwards;
-  animation-play-state: paused;
-}
-
-.tooltip:focus::before {
-  animation-play-state: running;
-}
-
-.tooltip .tooltip-content {
-  @apply absolute hidden text-center p-3 rounded-xl shadow-lg whitespace-pre-wrap;
-  content: attr(data-tooltip);
-  top: -90%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-  background: var(--color-bg-third);
-  color: var(--color-text);
-}
-
 .with-icon {
   @apply whitespace-nowrap;
 }
