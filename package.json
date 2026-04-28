@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@iconify/iconify": "^3.1.1",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "jetbrains-mono": "^1.0.6",
     "tailwindcss": "^4.2.2",
     "typescript": "~6.0.2",
