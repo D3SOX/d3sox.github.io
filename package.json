@@ -13,7 +13,7 @@
     "jetbrains-mono": "^1.0.6",
     "tailwindcss": "^4.2.4",
     "typescript": "~6.0.3",
-    "vite": "^8.0.10"
+    "vite": "^8.0.13"
   },
   "trustedDependencies": [
     "@parcel/watcher"
