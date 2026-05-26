@@ -9,11 +9,11 @@
   },
   "devDependencies": {
     "@iconify/iconify": "^3.1.1",
-    "@tailwindcss/vite": "^4.2.4",
+    "@tailwindcss/vite": "^4.3.0",
     "jetbrains-mono": "^1.0.6",
-    "tailwindcss": "^4.2.4",
+    "tailwindcss": "^4.3.0",
     "typescript": "~6.0.3",
-    "vite": "^8.0.10"
+    "vite": "^8.0.14"
   },
   "trustedDependencies": [
     "@parcel/watcher"
