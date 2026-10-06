@@ -65,7 +65,7 @@ svg.iconify {
 }
 
 .project-card img {
-  @apply mb-3 mx-auto rounded w-sm;
+  @apply mb-3 mx-auto rounded w-sm aspect-video object-cover;
 }
 
 .projects-footer {
