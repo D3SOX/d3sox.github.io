@@ -36,7 +36,7 @@ svg.iconify {
 }
 
 .section {
-  @apply my-4 rounded shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col max-w-7xl;
+  @apply my-4 rounded-[14px] shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col max-w-7xl;
   background-color: var(--color-bg-secondary);
 }
 
@@ -60,12 +60,12 @@ svg.iconify {
 }
 
 .project-card {
-  @apply mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded;
+  @apply mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded-xl;
   background-color: var(--color-bg-third);
 }
 
 .project-card img {
-  @apply mb-3 mx-auto rounded w-sm aspect-video object-cover;
+  @apply mb-3 mx-auto rounded-lg w-sm aspect-video object-cover;
 }
 
 .projects-footer {
