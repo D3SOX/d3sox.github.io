@@ -1,2 +1,0 @@
-- Actually remove JS dependency: download icon SVGs and bundle them
-- Optimize images (webp)

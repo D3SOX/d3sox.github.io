@@ -1,15 +1,17 @@
 @import "tailwindcss";
+@import "jetbrains-mono/css/jetbrains-mono.css";
 
-/* Custom theme extensions */
+/* Catppuccin Mocha */
 @theme {
-  --color-bg-primary: #282c34;
-  --color-bg-secondary: #3E4451;
-  --color-bg-third: #3C4049;
-  --color-text: #ABB2BF;
-  --color-yellow: #E5C17C;
-  --color-red: #E06C75;
-  --color-blue: #51afef;
-  --color-magenta: #c678dd;
+  --color-bg-primary: #1e1e2e;
+  --color-bg-secondary: #181825;
+  --color-bg-third: #1e1e2e;
+  --color-text: #cdd6f4;
+  --color-text-muted: #a6adc8;
+  --color-yellow: #f9e2af;
+  --color-red: #f38ba8;
+  --color-blue: #89b4fa;
+  --color-magenta: #cba6f7;
 
   /* Custom widths */
   --width-xs: 20rem;
@@ -23,7 +25,7 @@ body {
   color: var(--color-text);
 }
 
-svg.iconify {
+.icon {
   display: inline;
 }
 
@@ -56,7 +58,8 @@ svg.iconify {
 
 .code {
   background-color: var(--color-bg-primary);
-  @apply text-white/50 rounded p-2 mt-2;
+  color: var(--color-text-muted);
+  @apply rounded p-2 mt-2;
 }
 
 .project-card {
