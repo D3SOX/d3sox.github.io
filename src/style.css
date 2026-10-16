@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import "jetbrains-mono/css/jetbrains-mono.css";
+@import "@fontsource/maple-mono/latin-400.css";
+@import "@fontsource/maple-mono/latin-600.css";
 
 /* Catppuccin Mocha */
 @theme {
@@ -20,7 +21,7 @@
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Maple Mono", monospace;
   background-color: var(--color-bg-primary);
   color: var(--color-text);
 }

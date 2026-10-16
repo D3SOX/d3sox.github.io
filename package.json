@@ -9,8 +9,8 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "@fontsource/maple-mono": "5.3.0",
     "@tailwindcss/vite": "^4.3.3",
-    "jetbrains-mono": "^1.0.6",
     "tailwindcss": "^4.3.3",
     "typescript": "~7.0.2",
     "vite": "^8.3.4"
