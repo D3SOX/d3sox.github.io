@@ -63,7 +63,7 @@ body {
 }
 
 .project-card {
-  @apply mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded-xl;
+  @apply flex flex-col justify-center mx-auto mb-3 text-center w-xs lg:w-lg px-7 py-4 rounded-xl;
   background-color: var(--color-bg-third);
 }
 
