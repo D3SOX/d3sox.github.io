@@ -47,7 +47,7 @@ body {
 }
 
 .section {
-  @apply my-4 rounded-[14px] shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col max-w-7xl;
+  @apply my-4 rounded-[14px] shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col justify-center max-w-7xl;
   background-color: var(--color-bg-secondary);
 }
 
@@ -76,8 +76,41 @@ body {
   background-color: var(--color-bg-third);
 }
 
-.project-card img {
+.project-card picture img {
   @apply mb-3 mx-auto rounded-lg w-sm aspect-video object-cover;
+}
+
+.project-icon {
+  @apply inline size-6 align-middle;
+}
+
+.projects-subtitle {
+  color: var(--color-yellow);
+  @apply text-xl text-center mt-4 mb-4;
+}
+
+.small-projects {
+  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3;
+}
+
+.small-project {
+  @apply flex flex-col items-center gap-2 p-3 rounded-lg text-sm text-center break-words transition-colors duration-200;
+  background-color: var(--color-bg-third);
+  border: 1px solid transparent;
+}
+
+.small-project:hover {
+  border-color: var(--color-magenta);
+}
+
+.small-project-description {
+  @apply text-xs;
+  color: var(--color-text-muted);
+}
+
+.small-project img,
+.small-project svg {
+  @apply size-8 shrink-0;
 }
 
 .projects-footer {
