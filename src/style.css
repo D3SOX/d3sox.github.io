@@ -40,6 +40,13 @@ body {
   box-shadow:
     0 6px 16px rgb(0 0 0 / 25%),
     0 0 24px color-mix(in srgb, var(--color-blue) 20%, transparent);
+  transition: box-shadow 200ms ease;
+}
+
+.profile-picture:hover {
+  box-shadow:
+    0 6px 16px rgb(0 0 0 / 25%),
+    0 0 36px color-mix(in srgb, var(--color-blue) 45%, transparent);
 }
 
 .main {
@@ -94,13 +101,7 @@ body {
 }
 
 .small-project {
-  @apply flex flex-col items-center gap-2 p-3 rounded-lg text-sm text-center break-words transition-colors duration-200;
-  background-color: var(--color-bg-third);
-  border: 1px solid transparent;
-}
-
-.small-project:hover {
-  border-color: var(--color-magenta);
+  @apply flex flex-col items-center gap-2 p-3 rounded-lg text-sm text-center break-words;
 }
 
 .small-project-description {
@@ -118,26 +119,92 @@ body {
 }
 
 .project-more {
-  @apply inline-flex items-center gap-2 px-4 py-2 rounded font-semibold transition-colors duration-200;
-  background-color: var(--color-bg-third);
-  border: 1px solid transparent;
-}
-
-.project-more:hover {
-  border-color: var(--color-magenta);
-  color: var(--color-magenta);
+  @apply inline-flex items-center gap-2 px-4 py-2 rounded font-semibold;
 }
 
 a {
   color: var(--color-blue);
+  transition: color 250ms ease;
 }
 
 a svg {
   vertical-align: middle;
 }
 
-a:hover {
+a:hover,
+a:focus-visible {
   color: var(--color-magenta);
+}
+
+/* Text links: a soft glow, echoing the profile picture */
+a:where(:not(.project-link, .small-project, .project-more)) {
+  transition:
+    color 250ms ease,
+    text-shadow 250ms ease;
+}
+
+a:where(:not(.project-link, .small-project, .project-more)):is(:hover, :focus-visible) {
+  text-shadow: 0 0 10px color-mix(in srgb, var(--color-magenta) 60%, transparent);
+}
+
+/* Tile links: a gradient outline settles onto the edge while a halo fades in */
+.small-project,
+.project-more {
+  @apply relative;
+  background-color: var(--color-bg-third);
+  border: 1px solid transparent;
+  transition:
+    color 250ms ease,
+    box-shadow 300ms ease;
+}
+
+.small-project::after,
+.project-more::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-blue), var(--color-magenta));
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 250ms ease,
+    inset 250ms ease-out;
+}
+
+.small-project:is(:hover, :focus-visible),
+.project-more:is(:hover, :focus-visible) {
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-magenta) 20%, transparent);
+}
+
+.small-project:is(:hover, :focus-visible)::after,
+.project-more:is(:hover, :focus-visible)::after {
+  inset: -1px;
+  opacity: 1;
+}
+
+/* Project cards: the screenshot gets the profile picture's halo */
+.project-link picture img {
+  transition: box-shadow 300ms ease;
+}
+
+.project-link:is(:hover, :focus-visible) picture img {
+  box-shadow:
+    0 6px 16px rgb(0 0 0 / 25%),
+    0 0 28px color-mix(in srgb, var(--color-magenta) 30%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  a::after,
+  .profile-picture,
+  .project-link picture img {
+    transition-duration: 0s;
+  }
 }
 
 .tooltip {
