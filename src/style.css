@@ -72,6 +72,14 @@ body {
   @apply text-6xl mb-2;
 }
 
+.title-with-icon {
+  @apply flex items-center justify-center gap-4;
+}
+
+.title-icon {
+  @apply size-[0.85em] shrink-0;
+}
+
 .code {
   background-color: var(--color-bg-primary);
   color: var(--color-text-muted);
@@ -89,6 +97,13 @@ body {
 
 .project-icon {
   @apply inline size-6 align-middle;
+}
+
+.badge {
+  @apply inline-block ml-1 px-2 py-0.5 rounded-full text-xs align-middle;
+  color: var(--color-red);
+  border: 1px solid color-mix(in srgb, var(--color-red) 50%, transparent);
+  background-color: color-mix(in srgb, var(--color-red) 10%, transparent);
 }
 
 .projects-subtitle {
@@ -236,6 +251,41 @@ a:where(:not(.project-link, .small-project, .project-more)):is(:hover, :focus-vi
 
 .with-icon {
   @apply whitespace-nowrap;
+}
+
+.back-link {
+  @apply inline-block mb-4;
+}
+
+.pledge {
+  @apply max-w-2xl leading-relaxed;
+}
+
+.pledge > * + * {
+  @apply mt-4;
+}
+
+.pledge-item {
+  @apply flex gap-4;
+}
+
+.pledge-icon {
+  @apply size-6 shrink-0 mt-0.5;
+  color: var(--color-blue);
+}
+
+.pledge .pledge-contact {
+  @apply mt-6 text-center;
+  color: var(--color-text-muted);
+}
+
+.pledge-lead {
+  @apply flex flex-col items-center gap-2 text-xl text-center font-semibold;
+  color: var(--color-yellow);
+}
+
+.pledge-lead-icon {
+  @apply size-10;
 }
 
 .footer {

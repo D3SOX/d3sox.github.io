@@ -5,4 +5,9 @@ export default defineConfig({
     plugins: [
         tailwindcss(),
     ],
+    build: {
+        rolldownOptions: {
+            input: ['index.html', 'pledge.html'],
+        },
+    },
 })
