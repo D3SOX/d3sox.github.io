@@ -72,11 +72,11 @@ body {
   @apply text-6xl mb-2;
 }
 
-.title-with-icon {
-  @apply flex items-center justify-center gap-4;
+.heading-with-icon {
+  @apply flex items-center justify-center gap-[0.3em];
 }
 
-.title-icon {
+.heading-icon {
   @apply size-[0.85em] shrink-0;
 }
 
