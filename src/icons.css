@@ -1,0 +1,158 @@
+/* Icons from iconify/icon-sets at 0576187342d061cb9ad9ad6ee922f9ee36974df4. See public/icons-LICENSE.txt for attribution and licenses. */
+/* Icons and logos live in CSS so they render on first paint (the stylesheet is render-blocking) without bloating the HTML */
+
+.icon-libre-fm {
+  --icon: url("./icons/libre-fm.svg");
+}
+
+.icon-mdi-account-outline {
+  --icon: url("./icons/mdi-account-outline.svg");
+}
+
+.icon-mdi-android {
+  --icon: url("./icons/mdi-android.svg");
+}
+
+.icon-mdi-archive-outline {
+  --icon: url("./icons/mdi-archive-outline.svg");
+}
+
+.icon-mdi-bug-check-outline {
+  --icon: url("./icons/mdi-bug-check-outline.svg");
+}
+
+.icon-mdi-code-braces {
+  --icon: url("./icons/mdi-code-braces.svg");
+}
+
+.icon-mdi-gift-outline {
+  --icon: url("./icons/mdi-gift-outline.svg");
+}
+
+.icon-mdi-hammer-wrench {
+  --icon: url("./icons/mdi-hammer-wrench.svg");
+}
+
+.icon-mdi-handshake-outline {
+  --icon: url("./icons/mdi-handshake-outline.svg");
+}
+
+.icon-mdi-headphones {
+  --icon: url("./icons/mdi-headphones.svg");
+}
+
+.icon-mdi-information-outline {
+  --icon: url("./icons/mdi-information-outline.svg");
+}
+
+.icon-mdi-key-outline {
+  --icon: url("./icons/mdi-key-outline.svg");
+}
+
+.icon-mdi-link-variant {
+  --icon: url("./icons/mdi-link-variant.svg");
+}
+
+.icon-mdi-lock-open-variant-outline {
+  --icon: url("./icons/mdi-lock-open-variant-outline.svg");
+}
+
+.icon-mdi-open-in-new {
+  --icon: url("./icons/mdi-open-in-new.svg");
+}
+
+.icon-mdi-puzzle-outline {
+  --icon: url("./icons/mdi-puzzle-outline.svg");
+}
+
+.icon-raphael-pc {
+  --icon: url("./icons/raphael-pc.svg");
+}
+
+.icon-sc-gate-dl {
+  --icon: url("./icons/sc-gate-dl.svg");
+}
+
+.icon-simple-icons-bandcamp {
+  --icon: url("./icons/simple-icons-bandcamp.svg");
+}
+
+.icon-simple-icons-fluxer {
+  --icon: url("./icons/simple-icons-fluxer.svg");
+}
+
+.icon-simple-icons-github {
+  --icon: url("./icons/simple-icons-github.svg");
+}
+
+.icon-simple-icons-gitlab {
+  --icon: url("./icons/simple-icons-gitlab.svg");
+}
+
+.icon-simple-icons-kdeplasma {
+  --icon: url("./icons/simple-icons-kdeplasma.svg");
+}
+
+.icon-simple-icons-matrix {
+  --icon: url("./icons/simple-icons-matrix.svg");
+}
+
+.icon-simple-icons-soundcloud {
+  --icon: url("./icons/simple-icons-soundcloud.svg");
+}
+
+.icon-simple-icons-steamdeck {
+  --icon: url("./icons/simple-icons-steamdeck.svg");
+}
+
+.icon-tabler-brand-lastfm {
+  --icon: url("./icons/tabler-brand-lastfm.svg");
+}
+
+.logo-archlinux-official {
+  background-image: url("./logos/archlinux-official.svg");
+}
+
+.logo-archlinux {
+  background-image: url("./logos/archlinux.svg");
+}
+
+.logo-awesome-software {
+  background-image: url("./logos/awesome-software.svg");
+}
+
+.logo-fresh-restored-tabs {
+  background-image: url("./logos/fresh-restored-tabs.svg");
+}
+
+.logo-gh-fork-compare-fix {
+  background-image: url("./logos/gh-fork-compare-fix.svg");
+}
+
+.logo-nevumi {
+  background-image: url("./logos/nevumi.svg");
+}
+
+.logo-opentubex {
+  background-image: url("./logos/opentubex.svg");
+}
+
+.logo-pdfdocket {
+  background-image: url("./logos/pdfdocket.svg");
+}
+
+.logo-plasma-bluetooth-quick-connect {
+  background-image: url("./logos/plasma-bluetooth-quick-connect.webp");
+}
+
+.logo-restore-loaded-tabs {
+  background-image: url("./logos/restore-loaded-tabs.svg");
+}
+
+.logo-soundux {
+  background-image: url("./logos/soundux.webp");
+}
+
+.logo-vegsnap {
+  background-image: url("./logos/vegsnap.svg");
+}

@@ -5,6 +5,8 @@
         <link rel="icon" type="image/png" href="/favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="description" content="What I promise about the software I build">
+        <link rel="preload" href="/node_modules/@fontsource/maple-mono/files/maple-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="preload" href="/node_modules/@fontsource/maple-mono/files/maple-mono-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin/>
         <link rel="stylesheet" href="/src/style.css"/>
         <title>Pledge | D3SOX</title>
     </head>
@@ -13,46 +15,46 @@
         <header class="header">
             <a class="back-link" href="/">← Back to home</a>
             <h1 class="title heading-with-icon">
-                <svg class="heading-icon" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-handshake-outline"></use></svg>Pledge</h1>
+                <span class="heading-icon icon icon-mdi-handshake-outline" aria-hidden="true"></span>Pledge</h1>
             <p>Hold me to it</p>
         </header>
 
         <main class="main">
             <section id="pledge" class="section pledge">
                 <div class="pledge-lead">
-                    <svg class="pledge-lead-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-hammer-wrench"></use></svg>
+                    <span class="pledge-lead-icon icon icon-mdi-hammer-wrench" aria-hidden="true"></span>
                     <p>I build software I need myself. Most of this page follows from that.</p>
                 </div>
 
                 <div class="pledge-item">
-                    <svg class="pledge-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-bug-check-outline"></use></svg>
+                    <span class="pledge-icon icon icon-mdi-bug-check-outline" aria-hidden="true"></span>
                     <p>When something breaks, I'm usually the first to notice, so bugs, security issues, and breakage from dependency updates get fixed. I can't promise it'll be fast, since I'm one person, but every issue gets looked at. I don't close issues just because they're old.</p>
                 </div>
 
                 <div class="pledge-item">
-                    <svg class="pledge-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-gift-outline"></use></svg>
+                    <span class="pledge-icon icon icon-mdi-gift-outline" aria-hidden="true"></span>
                     <p>Most of my projects will stay free. If one ever becomes paid, you pay for me hosting it, not for features: the self-hosted version gets every feature, and you can leave any time and take your data with you.</p>
                 </div>
 
                 <div class="pledge-item">
-                    <svg class="pledge-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-lock-open-variant-outline"></use></svg>
+                    <span class="pledge-icon icon icon-mdi-lock-open-variant-outline" aria-hidden="true"></span>
                     <p>Open source stays open source. I won't relicense a project you already depend on.</p>
                 </div>
 
                 <div class="pledge-item">
-                    <svg class="pledge-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-archive-outline"></use></svg>
+                    <span class="pledge-icon icon icon-mdi-archive-outline" aria-hidden="true"></span>
                     <p>Ending a project is the last resort. If I have to, I'll announce it ahead of time, publish a final release that works, and keep the repository up so someone else can continue it.</p>
                 </div>
 
                 <div class="pledge-item">
-                    <svg class="pledge-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><use href="#mdi-information-outline"></use></svg>
+                    <span class="pledge-icon icon icon-mdi-information-outline" aria-hidden="true"></span>
                     <p>This covers the projects I still maintain. Older ones I've stopped working on are marked as such on my homepage.</p>
                 </div>
 
                 <p class="pledge-contact">
                     If I break this, tell me on
                     <a class="with-icon" href="https://matrix.to/#/@d3sox:matrix.org" target="_blank" rel="noopener">
-                        <svg class="icon" width="1em" height="1em" viewBox="0 0 24 24" aria-hidden="true"><use href="#simple-icons-matrix"></use></svg>
+                        <span class="icon icon-simple-icons-matrix" aria-hidden="true"></span>
                         Matrix</a>
                 </p>
             </section>

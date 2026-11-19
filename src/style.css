@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@fontsource/maple-mono/latin-400.css";
 @import "@fontsource/maple-mono/latin-600.css";
+@import "./icons.css";
 
 /* Catppuccin Mocha */
 @theme {
@@ -27,7 +28,23 @@ body {
 }
 
 .icon {
-  display: inline;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-color: currentColor;
+  mask-image: var(--icon);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header {
@@ -96,7 +113,7 @@ body {
 }
 
 .project-icon {
-  @apply inline size-6 align-middle;
+  @apply size-6;
 }
 
 .badge {
@@ -124,8 +141,8 @@ body {
   color: var(--color-text-muted);
 }
 
-.small-project img,
-.small-project svg {
+.small-project .icon,
+.small-project .logo {
   @apply size-8 shrink-0;
 }
 
@@ -140,10 +157,6 @@ body {
 a {
   color: var(--color-blue);
   transition: color 250ms ease;
-}
-
-a svg {
-  vertical-align: middle;
 }
 
 a:hover,
