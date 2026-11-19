@@ -64,6 +64,12 @@ body {
   @apply flex flex-wrap justify-center;
 }
 
+/* Browsers paint half-parsed pages, so sections would shift as later siblings arrive.
+   Keep the main content hidden until the footer after it has been parsed. */
+.main:not(:has(~ .footer)) {
+  visibility: hidden;
+}
+
 .section {
   @apply my-4 rounded-[14px] shadow-md hover:shadow-lg transition p-6 mx-4 flex flex-col justify-center max-w-7xl;
   background-color: var(--color-bg-secondary);
