@@ -10,6 +10,11 @@
   },
   "devDependencies": {
     "@fontsource/maple-mono": "5.3.0",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/raphael": "^1.2.1",
+    "@iconify-json/simple-icons": "^1.2.102",
+    "@iconify-json/tabler": "^1.2.46",
+    "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/vite": "^4.3.5",
     "tailwindcss": "^4.3.5",
     "typescript": "~7.0.2",
