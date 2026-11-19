@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @import "@fontsource/maple-mono/latin-400.css";
 @import "@fontsource/maple-mono/latin-600.css";
-@import "./icons.css";
+@plugin "@iconify/tailwind4" {
+  icon-sets: from-folder(custom, "./src/icons");
+}
 
 /* Catppuccin Mocha */
 @theme {
@@ -28,15 +30,7 @@ body {
 }
 
 .icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
   vertical-align: middle;
-  background-color: currentColor;
-  mask-image: var(--icon);
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: contain;
 }
 
 .logo {
